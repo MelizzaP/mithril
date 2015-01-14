@@ -43,7 +43,11 @@
             checked: todo.isComplete,
             
             // function (id, isComplete
-            onchange: ctrl.updateTodo.bind(null, todo.id)
+            onchange: ctrl.updateTodo.bind(null, todo.id, !todo.isComplete)
+            //same thing
+            // onchange: function (e) {
+            //  ctrl.updateTodo(todo.id, !todo.isComplete(
+            // }
           }),
           //label
           m('lalbel', todo.name)
