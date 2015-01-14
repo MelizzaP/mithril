@@ -44,8 +44,9 @@
             
             // function (id, isComplete
             onchange: ctrl.updateTodo.bind(null, todo.id)
-          })
+          }),
           //label
+          m('lalbel', todo.name)
           //bidn click action to ctrl
         ])
       }
